@@ -4,9 +4,11 @@
     require_once('classes/Repository/ArticleRepository.php');
     require_once('classes/User.php');
     require_once('classes/Repository/UserRepository.php');
+    require_once('classes/Repository/CommentaireRepository.php');
 
     $userRepository = new UserRepository();
     $articleRepository = new ArticleRepository();
+    $commentaireRepository = new CommentaireRepository();
     $articles = $articleRepository->getArticles();
 ?>
 
@@ -35,6 +37,8 @@
                         <span>Rédigé par : <?= $auteur->getNom() . ' ' . $auteur->getPrenom() ?></span>
                     </a>
                     <?php endforeach; ?>
+
+
             </div>
         </div>
     </div>

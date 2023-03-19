@@ -56,9 +56,12 @@ $auteur = $userRepository->getById($articleToShow->getUserId());
             </div>
             <?php endif; ?>
         </div>
+
     </div>
+
     <?php require_once 'includes/footer.php' ?>
 </div>
+
 
 </body>
 
