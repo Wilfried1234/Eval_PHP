@@ -1,6 +1,29 @@
 <?php
 
 class Commentaire {
+
+
+    private int $id;
+
+    private string $commentaire = '';
+
+    private int $idUser ;
+    private int $idArticle;
+    /**
+     * @return int
+     */
+    public function getIdArticle(): int
+    {
+        return $this->idArticle;
+    }
+
+    /**
+     * @param int $idArticle
+     */
+    public function setIdArticle(int $idArticle): void
+    {
+        $this->idArticle = $idArticle;
+    }
     /**
      * @param int $id
      */
@@ -24,11 +47,7 @@ class Commentaire {
     {
         $this->idUser = $idUser;
     }
-    private int $id;
 
-    private string $commentaire = '';
-
-    private int $idUser ;
 
     /**
      * @return int
@@ -49,7 +68,7 @@ class Commentaire {
     /**
      * @return string
      */
-    public function getIdUser(): string
+    public function getIdUser(): int
     {
         return $this->idUser;
     }

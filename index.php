@@ -36,9 +36,8 @@
                         <h3><?= $article->getTitle() ?></h3>
                         <span>Rédigé par : <?= $auteur->getNom() . ' ' . $auteur->getPrenom() ?></span>
                     </a>
+
                     <?php endforeach; ?>
-
-
             </div>
         </div>
     </div>
